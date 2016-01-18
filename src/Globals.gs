@@ -1,17 +1,15 @@
-
 /**********************
  GLOBALS
 **********************/
+
 // Top level label name
 var SCHEDULER_LABEL = 'GScheduler';
 var SCHEDULER_TIMER_LABEL = 'Timer';
 var SCHEDULER_QUEUE_LABEL = 'Queue';
 var SCHEDULER_EXTRAS_LABEL = 'Extras';
-var SCHEDULER_SMS_LABEL = 'Sms';
 
 // Use default google calendar to determine user timezone
 var DEFAULT_TIMEZONE = 'default';
-
 
 // Global preferences object
 var USER_PREFS = null;
@@ -28,10 +26,14 @@ var SETTINGS_URL = 'https://script.google.com/macros/s/AKfycbw6hnnKGeG6xUsbRE9c3
 
 /* NOTE these names must match the 'name' attribute in HTML */
 var DEFAULT_PREFS = {
-  move_sent_messages_inbox:true,
-  mark_sent_messages_inbox_unread:false,
-  nolabel_drafs_to_inbox:false,
-  send_message_sms:false,
-   localzone: 'default',
-  timer: ['1 hour later','2 hours later','3 hours later','One day later','tomorrow 9am','next monday 9am']    
+  move_sent_messages_inbox:        true,
+  mark_sent_messages_inbox_unread: false,
+  nolabel_drafs_to_inbox:          false,
+  localzone:                       'default',
+  timer:                           [ '1 hour later',
+                                     '2 hours later',
+                                     '3 hours later',
+                                     'One day later',
+                                     'tomorrow 9am',
+                                     'next monday 9am' ]
 };
